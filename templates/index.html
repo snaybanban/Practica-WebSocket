@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <script src="{{ url_for('static', filename='index.js')}}"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>WEB-SOCKETS</title>
+  </head>
+  <body>
+    <div class="container p-3 my-3 bg-primary text-white">
+      <h1>Mi primera app con socketIO</h1>
+      <p>Ejemplo basico.</p>
+    </div>
+    
+    <div class="container p-3 my-3 border">
+      <center><h1>Mensajes</h1>
+      <ul id="texto-msj" style="list-style:none"></ul>
+
+      <div class="d-flex justify-content-between align-items-center" style="height: 10vh;">
+        <div class="input-group mx-3">
+            <input type="text" class="form-control" id="mi-msj" autocomplete="off" placeholder="Escribe un msj" style="border-radius:10px;">
+        </div>  
+        <button type="submit" id="Enviar" class="btn btn-primary">Enviar</button>
+      </div></center>
+    </div>   
+
+</body>
+</html>
